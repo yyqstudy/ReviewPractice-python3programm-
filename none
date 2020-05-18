@@ -41,6 +41,21 @@ print(first_forty)
 #output
 Sad upset blue down melancholy somber bi
 
+write code to find out how many lines are in the file emotion_words.txt as shown above. 
+Save this value to the variable num_lines. Do not use the len method.
+
+fileref = open("emotion_words.txt",'r')
+num_lines = 0
+for lin in fileref.readlines():
+    num_lines += 1
+print(num_lines)    
+
+
+All absolute file paths start with "/
+    
+
+
+
 
 To be continue...
     
