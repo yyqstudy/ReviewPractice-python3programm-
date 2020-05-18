@@ -1,0 +1,46 @@
+Write code that uses iteration to print out the length of each element of the list stored in str_list.
+
+str_list = ["hello", "", "goodbye", "wonderful", "I love Python"]    
+for str in str_list:
+    print(len(str))
+    
+#output
+5
+0
+7
+9
+13
+(真的要经常复习，course1上完一周后不看会代码，最基本对都忘光了@@）
+
+Using the file school_prompt2.txt, 
+find the number of characters in the file and assign that value to the variable num_char.
+
+fileref = open("school_prompt2.txt",'r')
+num_char = 0
+for char in fileref.read():
+    num_char += 1
+print(num_char)  
+
+#output 537
+
+Find the number of lines in the file, travel_plans2.txt, and assign it to the variable num_lines.
+
+fileref = open("travel_plans2.txt",'r')
+contents = fileref.readlines()
+num_lines = 0
+for lin in contents:
+    num_lines += 1
+print(num_lines) 
+
+Create a string called first_forty that is comprised of the first 40 characters of emotion_words2.txt.
+
+fileref = open("emotion_words2.txt",'r')
+first_forty = fileref.read()[:40]
+print(first_forty)
+
+#output
+Sad upset blue down melancholy somber bi
+
+
+To be continue...
+    
