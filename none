@@ -53,9 +53,30 @@ print(num_lines)
 
 All absolute file paths start with "/
     
+Create a list called destination using the data stored in travel_plans.txt. 
+Each element of the list should contain a line from the file that lists a country and cities inside that country.
+Hint: each line that has this information also has a colon : in it.
 
+fileref = open("travel_plans.txt",'r')
+lines = fileref.readlines()
+#ll = lines.strip()
+destination = lines[2:8]
+print(destination)
 
+Create a list called j_emotions that contains every word in emotion_words.txt that begins with the letter “j”.
 
+fileref = open("emotion_words.txt",'r')
+lines = fileref.read()
+#print(lines)
+words = lines.split()
+#print(words)
+j_emotions = []
+for w in words:   
+    if w[0] is 'j':
+        j_emotions.append(w)
+print(j_emotions) 
 
+#output
+['joyous', 'jittery', 'jumpy']
 To be continue...
     
