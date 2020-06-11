@@ -80,3 +80,26 @@ print(j_emotions)
 ['joyous', 'jittery', 'jumpy']
 To be continue...
     
+1.Create a list of numbers 0 through 40 and assign this list to the variable numbers.
+Then, accumulate the total of the list’s values and assign that sum to the variable sum1.
+
+numbers = range(41)
+#print(numbers)
+sum1 = 0
+for num in numbers:
+    sum1 = sum1 + num
+print(sum1)    
+#居然忘了range
+
+2.Find the number of lines in the file, travel_plans2.txt, and assign it to the variable num_lines.
+
+rfile = open('travel_plans2.txt','r')
+content = rfile.readlines()
+#print(content)
+num_lines = 0
+for str in content:
+    num_lines = num_lines + 1
+print(num_lines)  
+#关于file的又忘记了，要复习啦,好像可以用len函数^_^
+
+
